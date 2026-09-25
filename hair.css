@@ -799,11 +799,3 @@ height: auto;
 html, body {
     overflow-x: hidden;
 }
-@media (max-width: 600px) {
-    * {
-        outline: 1px solid red;
-    }
-}
-body {
-    background: blue !important;
-}
