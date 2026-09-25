@@ -781,5 +781,29 @@ height: auto;
     width: 65px;
     height: 65px;
     border-radius: 60%;
+}
+.hours-content p {
+    min-width: 0;
+    width: 100%;
+}
 
+.salon-content a {
+    padding: 10px 25px;
+    display: inline-block;
+}
+
+.why-container {
+    grid-template-columns: 1fr;
+}
+}
+html, body {
+    overflow-x: hidden;
+}
+@media (max-width: 600px) {
+    * {
+        outline: 1px solid red;
+    }
+}
+body {
+    background: blue !important;
 }
