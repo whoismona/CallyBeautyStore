@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ventilation</title>
+	<link rel="stylesheet" type="text/css" href="hair.css">
+</head>
+<body>
+	<main class="ventilation">
+		<div class="heading-p">
+			<h1>Book Your Hair Ventilation</h1>
+			<p>Get your closure or frontal professionally hand ventilated to achieve a natural loooking hairline customize to your desired style</p>
+		</div>
+		<section id="services">
+			<div class="service-table">
+				<h2>What We Offer</h2>
+				<table>
+					<thead>
+						<tr>
+						<th>Ventilation type</th>
+						<th>Price</th>
+					</tr>
+				</thead>
+					<tbody>
+					<tr>
+						<td>2 x 4 closure</td>
+						<td>#6000</td>
+					</tr>
+					<tr>
+						<td>2 x 6 closure</td>
+						<td>#10,000</td>
+					</tr>
+					<tr>
+						<td>4 x 4 closure</td>
+						<td>#12,000</td>
+					</tr>
+					<tr>
+						<td>5 x 5 closure</td>
+						<td>#15,000</td>
+					</tr>
+					<tr>
+						<td>6 x 6 closure</td>
+						<td>#17,000</td>
+					</tr>
+					<tr>
+						<td>T-Frontal</td>
+						<td>#6,000</td>
+					</tr>
+					
+					<tr>
+						<td>13 x 2 Frontal</td>
+						<td>#19,000</td>
+					</tr>
+					<tr>
+						<td>13 x 3 Frontal</td>
+						<td>#22,000</td>
+					</tr>
+					<tr>
+						<td>13 x 4 Frontal</td>
+						<td>#26,000</td>
+					</tr>
+					<tr>
+						<td>13 x 6 Frontal</td>
+						<td>#28,000</td>
+					</tr>						
+		</tbody>
+	</table>
+</div>
+		</section>
+		<section id="form-booking">
+			<div class="booking">
+				<div class="booking-heading">
+                <h2>Book Your Ventilation Service</h2>
+                <p>Fill in your details below and we'll receive your booking through WhatsApp.</p>
+                </div>
+				<form onsubmit="bookVentilation(); return false;">
+					<label for="name">Name:</label>
+					<input type="text" id="name" name="name" placeholder="enter your name" required>
+					<label for="telephone">Phone Number:</label>
+					<input type="tel" name="telephone" id="phone" placeholder="0123456789*" pattern="[0-9]{11}" maxlength="11"required>
+					<label for="venilation-type">Ventilation Type:</label>
+					<select id="ventilation-type" name="ventilationType"required>
+					<option value="">Select ventilation type</option> 
+					<option>2 × 4 Closure — ₦6,000</option> 
+					<option>2 × 6 Closure — ₦10,000</option>
+					<option>4 × 4 Closure — ₦12,000</option> 
+					<option>5 × 5 Closure — ₦15,000</option>
+					<option>6 × 6 Closure — ₦17,000</option> 
+					<option>T-Frontal — ₦6,000</option> 
+					<option>13 × 6 Frontal — ₦28,000</option>					 
+					<option>13 x 2 Frontal — 19,000</option>
+					<option>13 x 3 Frontal — ₦22,000</option>
+					<option>13 x 4 Frontal — ₦26,000</option>
+					</select>
+					<label for="density">Hair Density</label>
+					<select id="density" name="density" required>
+                    <option value="">Select density</option>
+                    <option value="Light">Light</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Full">Full</option>
+                    <option value="Extra Full">Extra Full</option>
+              </select>
+              <label for="preferredDate">Preferred Date</label>
+              <input type="date" id="preferredDate" name="preferredDate" required>
+              <label for="specialRequest">Special Request</label>
+               <textarea id="specialRequest" name="specialRequest"rows="4" placeholder="Tell us any special request or instruction..."></textarea>
+               <div id="bookingSummary"></div>
+               <button type="submit" class="book-btn">Book Now</button>
+               <p id="bookingMessage"></p>
+				</form>
+			</div>
+		</section>
+	</main>
+	<script src="main.js"></script>
+</body>
+</html>
