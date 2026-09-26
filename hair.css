@@ -142,7 +142,7 @@ nav button:hover{
 	display: flex;
 	gap: 15px;
 }
-.hero-btn button{
+.hero-btn button {
 	padding: 10px 20px;
     border: none;
     border-radius: 30px;
@@ -156,10 +156,22 @@ nav button:hover{
 .hero-btn button:hover{
 	transform: translateY(-3px);
 }
-#change-btn{
-	background: rgba(0, 0, 0, 0.3);
-	color: white;
+.hero-btn a{
+    padding: 15px 30px;
+    border: none;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 30px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+    font-size:15px;
+    transition: 0.3s ease;
 }
+.hero-btn a:hover{
+    transform: translateY(-3px);
+}
+
 #arrow{
     display: flex;
     position: relative;
